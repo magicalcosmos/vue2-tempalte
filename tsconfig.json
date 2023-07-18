@@ -1,0 +1,54 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@mixins/*": ["src/views/components/mixins/*"],
+      "tslib" : ["node_modules/tslib/tslib.d.ts"]
+    },
+    "noEmitOnError": true,
+    "moduleResolution": "node",
+    "module": "esnext",
+    "target": "es5",
+    "removeComments": false,
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strictFunctionTypes": false,
+    "importHelpers": true,
+    "allowJs": true,
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "allowSyntheticDefaultImports": true,
+    "composite": true,
+    "resolveJsonModule": true,
+    "lib": [
+      "es2015",
+      "es5",
+      "dom",
+      "es2015.promise",
+      "esnext",
+      "esnext.bigint"
+    ]
+  },
+  "include": [
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "src/**/*.css",
+    "static/**/*.js",
+    "@types/**/*.d.ts",
+    "types/**/*.ts",
+    "test/**/*.js",
+    "test/**/*.ts",
+    "test/**/*.spec.js",
+    "test/**/*.spec.jsx",
+    "test/**/*.spec.ts",
+    "test/**/*.spec.tsx",
+  ]
+}
+

@@ -1,0 +1,6 @@
+--colors
+--bail
+--watch
+--webpack-config configuration/webpack.config.test.js
+--require test/setup.js
+test/**/*.spec.js

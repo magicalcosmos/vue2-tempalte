@@ -1,0 +1,4 @@
+/**/*.d.ts
+/**/echarts.min.js
+/**/__mocks__
+/**/__tests__

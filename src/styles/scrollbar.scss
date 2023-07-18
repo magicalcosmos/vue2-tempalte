@@ -1,0 +1,71 @@
+.r-scrollbar {
+  overflow: hidden;
+  position: relative
+}
+
+.r-scrollbar:active>.r-scrollbar__bar,
+.r-scrollbar:focus>.r-scrollbar__bar,
+.r-scrollbar:hover>.r-scrollbar__bar {
+  opacity: 1;
+  -webkit-transition: opacity 340ms ease-out;
+  transition: opacity 340ms ease-out
+}
+
+.r-scrollbar__wrap {
+  overflow: scroll;
+  height: 100%
+}
+
+.r-scrollbar__wrap--hidden-default {
+  scrollbar-width: none
+}
+
+.r-scrollbar__wrap--hidden-default::-webkit-scrollbar {
+  width: 0;
+  height: 0
+}
+
+.r-scrollbar__thumb {
+  position: relative;
+  display: block;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+  border-radius: inherit;
+  background-color: rgba(144, 147, 153, .3);
+  -webkit-transition: .3s background-color;
+  transition: .3s background-color
+}
+
+.r-scrollbar__thumb:hover {
+  background-color: rgba(144, 147, 153, .5)
+}
+
+.r-scrollbar__bar {
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+  z-index: 1;
+  border-radius: 4px;
+  opacity: 0;
+  -webkit-transition: opacity 120ms ease-out;
+  transition: opacity 120ms ease-out
+}
+
+.r-scrollbar__bar.is-vertical {
+  width: 6px;
+  top: 2px
+}
+
+.r-scrollbar__bar.is-vertical>div {
+  width: 100%
+}
+
+.r-scrollbar__bar.is-horizontal {
+  height: 6px;
+  left: 2px
+}
+
+.r-scrollbar__bar.is-horizontal>div {
+  height: 100%
+}

@@ -1,0 +1,171 @@
+@import './bootstrap.css';
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+@import "./base.scss";
+@import "./loading.scss";
+@import "./animate.scss";
+@import "./icon.scss"; // base elementui
+@import "./buttons.scss";
+@import "./breadcrumb.scss";
+@import "./input.scss";
+@import "./radio.scss";
+@import "./checkbox.scss";
+@import "./select.scss";
+@import "./option.scss";
+@import "./cascader.scss";
+@import "./cascader-panel.scss";
+@import "./date-picker.scss";
+@import "./tag.scss";
+@import "./flex.scss";
+@import "./dialog.scss";
+@import "./form.scss";
+@import "./table.scss";
+@import "./header.scss";
+@import "./page-header.scss";
+@import "./pagination.scss";
+@import "./progress.scss";
+@import "./typography.scss";
+@import "./menu.scss";
+@import "./upload.scss";
+@import "./tree.scss";
+@import "./radio-group.scss";
+@import "./step.scss";
+@import "./steps.scss";
+@import "./popconfirm.scss";
+@import "./message.scss";
+@import "./message-box.scss";
+@import "./switch.scss";
+@import "./filter-panel.scss";
+
+html,body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  font-size: 14px;
+}
+input {
+  outline: none;
+}
+textarea {
+  outline: none;
+  resize: none;
+}
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+//main-container全局样式
+.app-main {
+  min-height: 100%
+}
+
+.app-container {
+  padding: 20px;
+}
+
+.components-container {
+  margin: 5px;
+  position: relative;
+}
+
+.pull-right {
+  float: right;
+}
+
+.dialog-message {
+  color: red;
+  font-size: 14px;
+}
+
+.p-relative {
+  position: relative;
+}
+.p-absolute {
+  position: absolute;
+}
+
+.common-table-list {
+  table {
+    td {
+      padding: 5px 0 !important;
+    }
+  }
+}
+.icon-s, .icon-p, .icon-t, .icon-g {
+  @include setWHL(18px, 18px);
+  background: $primary;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  overflow: hidden;
+  position: relative;
+  top: 2px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.cursor {
+  cursor: pointer;
+}

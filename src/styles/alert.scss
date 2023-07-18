@@ -1,0 +1,140 @@
+.r-alert {
+  width: 100%;
+  padding: 8px 16px;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 4px;
+  position: relative;
+  background-color: #FFF;
+  overflow: hidden;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s
+}
+
+.r-alert.is-light .r-alert__closebtn {
+  color: #C0C4CC
+}
+
+.r-alert.is-dark .r-alert__closebtn,
+.r-alert.is-dark .r-alert__description {
+  color: #FFF
+}
+
+.r-alert.is-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+
+.r-alert--success.is-light {
+  background-color: #f0f9eb;
+  color: #67C23A
+}
+
+.r-alert--success.is-light .r-alert__description {
+  color: #67C23A
+}
+
+.r-alert--success.is-dark {
+  background-color: #67C23A;
+  color: #FFF
+}
+
+.r-alert--info.is-light {
+  background-color: #f4f4f5;
+  color: #909399
+}
+
+.r-alert--info.is-dark {
+  background-color: #909399;
+  color: #FFF
+}
+
+.r-alert--info .r-alert__description {
+  color: #909399
+}
+
+.r-alert--warning.is-light {
+  background-color: #fdf6ec;
+  color: #E6A23C
+}
+
+.r-alert--warning.is-light .r-alert__description {
+  color: #E6A23C
+}
+
+.r-alert--warning.is-dark {
+  background-color: #E6A23C;
+  color: #FFF
+}
+
+.r-alert--error.is-light {
+  background-color: #fef0f0;
+  color: #F56C6C
+}
+
+.r-alert--error.is-light .r-alert__description {
+  color: #F56C6C
+}
+
+.r-alert--error.is-dark {
+  background-color: #F56C6C;
+  color: #FFF
+}
+
+.r-alert__content {
+  display: table-cell;
+  padding: 0 8px
+}
+
+.r-alert__icon {
+  font-size: 16px;
+  width: 16px
+}
+
+.r-alert__icon.is-big {
+  font-size: 28px;
+  width: 28px
+}
+
+.r-alert__title {
+  font-size: 13px;
+  line-height: 18px
+}
+
+.r-alert__title.is-bold {
+  font-weight: 700
+}
+
+.r-alert .r-alert__description {
+  font-size: 12px;
+  margin: 5px 0 0
+}
+
+.r-alert__closebtn {
+  font-size: 12px;
+  opacity: 1;
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  cursor: pointer
+}
+
+.r-alert__closebtn.is-customed {
+  font-style: normal;
+  font-size: 13px;
+  top: 9px
+}
+
+.r-alert-fade-enter,
+.r-alert-fade-leave-active {
+  opacity: 0
+}

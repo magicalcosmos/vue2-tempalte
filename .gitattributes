@@ -1,0 +1,3 @@
+dist merge=ours
+/dist merge=ours
+/dist/**/**.* merge=ours

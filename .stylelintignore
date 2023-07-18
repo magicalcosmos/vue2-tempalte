@@ -1,0 +1,28 @@
+# .stylelintignore
+# 旧的不需打包的样式库
+*.min.css
+
+
+iconfont.scss
+iconfont.css
+demo.css
+src/styles/**
+
+index.html
+
+src/App.vue
+
+# 其他类型文件
+*.js
+*.jpg
+*.png
+*.eot
+*.ttf
+*.woff
+*.json
+
+# 测试和打包目录
+/test/
+/dist/
+
+/coverage/

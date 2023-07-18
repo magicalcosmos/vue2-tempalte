@@ -1,0 +1,26 @@
+{
+  "nyc": {
+    "include": [
+      "src/**/*.(js|ts|vue)"
+    ],
+    "exclude": [
+      "**/*.spec.js"
+    ],
+    "reporter": [
+      "lcov",
+      "text",
+      "text-summary",
+      "html"
+    ],
+    "extension": [
+      ".js",
+      ".ts",
+      ".vue"
+    ],
+    "check-coverage": true,
+    "instrument": false,
+    "sourceMap": false,
+    "cache": true,
+    "all": true
+  }
+}

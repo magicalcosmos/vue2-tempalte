@@ -1,0 +1,164 @@
+.r-form--inline .r-form-item,
+.r-form--inline .r-form-item__content {
+  display: inline-block;
+  vertical-align: top
+}
+
+.r-form-item::after,
+.r-form-item__content::after {
+  clear: both
+}
+
+.r-form--label-left .r-form-item__label {
+  text-align: left
+}
+
+.r-form--label-top .r-form-item__label {
+  float: none;
+  display: inline-block;
+  text-align: left;
+  padding: 0 0 10px
+}
+
+.r-form--inline .r-form-item {
+  margin-right: 10px
+}
+
+.r-form--inline .r-form-item__label {
+  float: none;
+  display: inline-block
+}
+
+.r-form--inline.r-form--label-top .r-form-item__content {
+  display: block
+}
+
+.r-form-item {
+  margin-bottom: 22px
+}
+
+.r-form-item::after,
+.r-form-item::before {
+  display: table;
+  content: ""
+}
+
+.r-form-item .r-form-item {
+  margin-bottom: 0
+}
+
+.r-form-item--mini.r-form-item,
+.r-form-item--small.r-form-item {
+  margin-bottom: 18px
+}
+
+.r-form-item .r-input__validateIcon {
+  display: none
+}
+
+.r-form-item--medium .r-form-item__content,
+.r-form-item--medium .r-form-item__label {
+  line-height: 36px
+}
+
+.r-form-item--small .r-form-item__content,
+.r-form-item--small .r-form-item__label {
+  line-height: 32px
+}
+
+.r-form-item--small .r-form-item__error {
+  padding-top: 2px
+}
+
+.r-form-item--mini .r-form-item__content,
+.r-form-item--mini .r-form-item__label {
+  line-height: 28px
+}
+
+.r-form-item--mini .r-form-item__error {
+  padding-top: 1px
+}
+
+.r-form-item__label-wrap {
+  float: left
+}
+
+.r-form-item__label-wrap .r-form-item__label {
+  display: inline-block;
+  float: none
+}
+
+.r-form-item__label {
+  text-align: right;
+  vertical-align: middle;
+  float: left;
+  font-size: 12px;
+  font-weight: normal;
+  color: #666666;
+  line-height: 40px;
+//   padding: 0 42px 0 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+.r-form-item__content {
+  line-height: 40px;
+  position: relative;
+  font-size: 14px
+}
+
+.r-form-item__content::after,
+.r-form-item__content::before {
+  display: table;
+  content: ""
+}
+
+.r-form-item__content .r-input-group {
+  vertical-align: top
+}
+
+.r-form-item__error {
+  color: #F56C6C;
+  font-size: 12px;
+  line-height: 1;
+  position: absolute;
+  margin-left: 0.5rem;
+  top: 100%;
+  left: 0
+}
+
+.r-form-item__error--inline {
+  position: relative;
+  top: auto;
+  left: auto;
+  display: inline-block;
+  margin-left: 10px
+}
+
+.r-form-item.is-required:not(.is-no-asterisk) .r-form-item__label-wrap>.r-form-item__label:before,
+.r-form-item.is-required:not(.is-no-asterisk)>.r-form-item__label:before {
+  content: '\e639';
+  color: #F56C6C;
+  margin-right: 3px;
+  font-size: 10px;
+}
+
+.r-form-item.is-error .r-input__inner,
+.r-form-item.is-error .r-input__inner:focus,
+.r-form-item.is-error .r-textarea__inner,
+.r-form-item.is-error .r-textarea__inner:focus {
+  border-color: #F56C6C
+}
+
+.r-form-item.is-error .r-input-group__append .r-input__inner,
+.r-form-item.is-error .r-input-group__prepend .r-input__inner {
+  border-color: transparent
+}
+
+.r-form-item.is-error .r-input__validateIcon {
+  color: #F56C6C
+}
+
+.r-form-item--feedback .r-input__validateIcon {
+  display: inline-block
+}
